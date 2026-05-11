@@ -1,0 +1,20 @@
+{
+  "id": "test-minimal-001",
+  "name": "Test Minimal Template",
+  "sector": "estetica",
+  "version": 1,
+  "slots": {
+    "businessName": { "type": "text", "required": true, "max_length": 30, "ai_hint": "nome dell'attività come appare sull'insegna" },
+    "tagline": { "type": "text", "required": true, "max_length": 80, "ai_hint": "frase breve evocativa, max 8 parole, no punto finale, no esclamazioni" },
+    "heroDescription": { "type": "text", "max_length": 200, "ai_hint": "descrizione breve dell'attività, tono accogliente e professionale" },
+    "primaryColor": { "type": "color", "default": "#1a1a1a", "ai_hint": "colore dominante del brand, scuro" },
+    "accentColor": { "type": "color", "default": "#d4af37", "ai_hint": "colore accent per CTA, complementare al primary" },
+    "phone": { "type": "text", "format": "phone_intl" },
+    "address": { "type": "text" },
+    "city": { "type": "text" }
+  },
+  "ai_context": {
+    "tone": "professionale, accogliente",
+    "avoid": ["linguaggio aggressivo", "stock phrases", "esclamazioni", "promesse di risultati garantiti"]
+  }
+}
